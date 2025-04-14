@@ -6,9 +6,8 @@ Intall the Dependencies:
 
 Run the Python Code
 
-Test it using commands from the Test file
-
-
+Test it using commands from the Test file.
+The Program will automaticaly create a log file and the packet detail will be stored there.
 
 
 We would like to express our sincere gratitude to Mr. Gaurav Prasad, Assistant Professor, Department of Information Technology, Manipal Institute of Technology, Bengaluru, for his invaluable guidance, mentorship, and support throughout the development of this project.
