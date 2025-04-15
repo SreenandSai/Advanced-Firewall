@@ -1,0 +1,14 @@
+SQL Injection: 
+curl 'http://localhost:5000/api/data?q=admin%27+OR+1%3D1--' -H "X-API-Key: secure-key-123"
+
+XSS: 
+curl 'http://localhost:5000/api/data?q=<script>alert("hacked")</script>' -H "X-API-Key: secure-key-123"
+
+FTP Manipulation:
+curl -X POST -H "X-API-Key: secure-key-123" -d "CMD=USER root" http://localhost:5000/api/data
+
+DNS Tunneling:
+curl -X POST -H "X-API-Key: secure-key-123" -d "q=dnsc2.3rrr9a8xjkd1234x.base64domain.tld" http://localhost:5000/api/data
+
+Secure Data Access:
+curl -H "X-API-Key: secure-key-123" http://localhost:5000/api/data
