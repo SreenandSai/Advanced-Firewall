@@ -81,7 +81,7 @@ def check_auth_and_rate_limit():
     now = time.time()
     last_time = rate_limit.get(api_key, 0)
 
-    if now - last_time < 0:
+    if now - last_time < 5:   # Change the Value from 5 according to the required rate limiting; Currently set as a 5-second gap between 2 requests.
         msg = f"Rate limited request from {user}"
         print(msg)
         logging.warning(msg)
