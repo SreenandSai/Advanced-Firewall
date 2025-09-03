@@ -1,6 +1,6 @@
 # Advanced-Firewall
 
-Intall the Dependencies:
+Install the Dependencies:
 •	Scapy
 •	Flask
 
